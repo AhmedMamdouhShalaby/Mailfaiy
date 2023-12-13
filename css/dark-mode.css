@@ -1,0 +1,25 @@
+:root:has(.mode input:checked) {
+    --primery-color: #C17E1F;
+    --nav-main-col: #171717;
+    --black-color: #fff;
+    --color-light-grey: #202020;
+    --p-color: #9F9F9F;
+    --btn-hover: hsl(35, 72%, 49.02%);
+    --tit-col: #fff;
+    --deep-dark: #0D0D0D;
+    --very-light: #161616;
+
+}
+
+body:has(.mode input:checked) .nav .container .mode .light {
+    display: block;
+}
+
+body:has(.mode input:checked) .nav .container .mode .dark {
+    display: none;
+}
+
+body:has(.mode input:checked) .cards-section .card picture:after {
+    background-image: url(../team-shape-dark.svg);
+    bottom: 0px;
+}
